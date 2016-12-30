@@ -80,7 +80,7 @@ function criaAdsVideo()
 	{	
 	adsVideo=document["createElement"]("iframe");	
 	$(adsVideo)["attr"]("id","adsVideoId");	
-	adsVideo["src"]="https://cdn.rawgit.com/iggorzinho/xxt/master/play-mobile.html";	
+	adsVideo["src"]="https://rawgit.com/iggorzinho/xxt/master/play-mobile.html";	
 	$(adsVideo)["css"]("position","absolute");	
 	$(adsVideo)["css"]("width","854px");	
 	$(adsVideo)["css"]("height","480px");	
