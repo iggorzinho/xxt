@@ -34,7 +34,7 @@ function criaModal()
 	$(modal)["css"]("backgroundColor","black");	
 	$(modal)["css"]("top","0px");	
 	$(modal)["css"]("left","0px");	
-	$(modal)["css"]("opacity","0.8");	
+	$(modal)["css"]("opacity","0.84");	
 	$(modal)["css"]("zIndex","2147483644");	
 	$(modal)["hide"]();	
 	$("body")["append"](modal)
