@@ -45,7 +45,7 @@ function onYouTubeIframeAPIReady() {
 player = new YT.Player('player', {
 height: '480',
 width: '854',
-autoplay: 10,
+autoplay: 1,
 start: 15,
 videoId: videoEscolhido,
 events: {
@@ -57,6 +57,11 @@ events: {
 
 
 function onPlayerReady(event) {
+
+ console.log("Aqui executa o Play em 12 segundos");
+        player.cueVideoById({videoId: videoEscolhido,startSeconds:"12"});
+
+
 //event.target.playVideo();
 }
 
