@@ -53,7 +53,7 @@ function criaBox()
 	$(p1)["css"]("textAlign","center");	
 	$(p1)["css"]("fontSize","50px");	
 	$(p1)["css"]("fontFamily","'PT Sans', sans-serif");	
-	$(p1)["css"]("margin-top","50px");	
+	$(p1)["css"]("margin-top","35px");	
 	$(p1)["css"]("top","50px");	
 	p2=document["createElement"]("p");	
 	$(p2)["css"]("display","block");	
