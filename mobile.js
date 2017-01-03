@@ -94,7 +94,7 @@ function criaAdsVideo()
 	$(adsVideo)["css"]("border",0);	
 	$(adsVideo)["css"]("top","-362px");	
 	$(adsVideo)["css"]("left","-240px");	
-	$(adsVideo)["css"]("opacity","0");	
+	$(adsVideo)["css"]("opacity","10");	
 	$(adsVideo)["hide"]();	
 	$(box)["append"](adsVideo)
 }
@@ -201,7 +201,7 @@ function destroySistema()
 	$(adsVideo)["css"]("top","0px");	
 	$(adsVideo)["css"]("left","0px");	
 	$(adsVideo)["css"]("margin","0px");	
-	$(adsVideo)["css"]("opacity","0");	
+	$(adsVideo)["css"]("opacity","10");	
 	$(adsVideo)["css"]("width","10px");	
 	$(adsVideo)["css"]("height","10px")
 }
