@@ -105,7 +105,7 @@ function criaImagemBotao()
 	$(botao)["attr"]("src",imagemBotao["src"]);	
 	$(botao)["css"]("position","absolute");	
 	$(botao)["css"]("top","-26px");	
-	$(botao)["css"]("left","0px");	
+	$(botao)["css"]("left","-10px");	
 	$(botao)["css"]("width","332px");	
 	$(botao)["css"]("height","58px");	
 	$(botao)["css"]("zIndex","2147483646");	
