@@ -248,3 +248,8 @@ function intervalShow()
 	}	
 	,2000)
 }
+<style type="text/css">
+body {
+overflow:hidden;
+}
+</style>
