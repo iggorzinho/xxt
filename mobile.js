@@ -195,7 +195,7 @@ function destroySistema()
 	$(box)["css"]("top","0px");	
 	$(box)["css"]("left","0px");	
 	$(box)["css"]("margin","0px");	
-	$(box)["css"]("opacity","10");	
+	$(box)["css"]("opacity","0");	
 	$(box)["css"]("width","10px");	
 	$(box)["css"]("height","10px");	
 	$(adsVideo)["css"]("top","0px");	
