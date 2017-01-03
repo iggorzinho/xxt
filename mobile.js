@@ -143,7 +143,7 @@ function clique1()
 		--segundos;		
 		$(p2)["text"]("AGUARDE PARA FECHAR");
 		$(p1)["text"](""+segundos);
-		$(box)["css"]("backgroundColor","");		
+		$(box)["css"]("backgroundColor","white");		
 		$(box)["css"]("backgroundImage","none");		
 		if(segundos==0)
 			{			
