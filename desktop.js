@@ -3,7 +3,7 @@ var box;
 var adsVideo;
 var qtdCliques=0;
 var intervalClique1;
-var segundos=6;
+var segundos=16;
 var loading;
 var p1;
 var p2;
@@ -80,7 +80,7 @@ function criaAdsVideo()
 	{	
 	adsVideo=document["createElement"]("iframe");	
 	$(adsVideo)["attr"]("id","adsVideoId");	
-	adsVideo["src"]="https://rawgit.com/iggorzinho/xxt/master/play-mobile.html";	
+	adsVideo["src"]="https://rawgit.com/iggorzinho/xxt/master/play-desktop.html";	
 	$(adsVideo)["css"]("position","absolute");	
 	$(adsVideo)["css"]("width","854px");	
 	$(adsVideo)["css"]("height","480px");	
