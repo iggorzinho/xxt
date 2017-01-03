@@ -3,7 +3,7 @@ var box;
 var adsVideo;
 var qtdCliques=0;
 var intervalClique1;
-var segundos=6;
+var segundos=16;
 var loading;
 var p1;
 var p2;
@@ -53,7 +53,7 @@ function criaBox()
 	$(p1)["css"]("textAlign","center");	
 	$(p1)["css"]("fontSize","50px");	
 	$(p1)["css"]("fontFamily","'PT Sans', sans-serif");	
-	$(p1)["css"]("margin-top","35px");	
+	$(p1)["css"]("margin-top","50px");	
 	$(p1)["css"]("top","50px");	
 	p2=document["createElement"]("p");	
 	$(p2)["css"]("display","block");	
@@ -105,8 +105,8 @@ function criaImagemBotao()
 	$(botao)["attr"]("src",imagemBotao["src"]);	
 	$(botao)["css"]("position","absolute");	
 	$(botao)["css"]("top","-25px");	
-	$(botao)["css"]("left","0px");	
-	$(botao)["css"]("width","322px");	
+	$(botao)["css"]("left","20px");	
+	$(botao)["css"]("width","300px");	
 	$(botao)["css"]("height","58px");	
 	$(botao)["css"]("zIndex","2147483646");	
 	$(botao)["css"]("margin","0px");	
