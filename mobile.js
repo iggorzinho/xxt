@@ -246,5 +246,5 @@ function intervalShow()
 		$(botao)["css"]("display","inline");		
 		$(adsVideo)["css"]("display","inline")	
 	}	
-	,1000)
+	,2000)
 }
