@@ -158,16 +158,18 @@ function clique2()
 	setTimeout(function()
 	   {		
 	   console["log"]("Clique efetuado: "+qtdCliques);		
-	   $("#adsVideoId")["iframeTracker"](false);		
-	   gravaCookie("clique","sim",20);		
-	   setTimeout(function()		
-	       {			
-	       destroySistema()		
-	   }		
-	   ,2000)	
-	}	
-	,0)
+        $("#adsVideoId")["iframeTracker"](false);
+        gravaCookie("clique", "sim", 20);
+        setTimeout(function ()
+        {
+            destroySistema()
+			alert("O anuncio foi fechado com sucesso!");
+        }
+        , 100)
+    }
+    , 0)
 }
+
 function flushClique()
 	{	
 	var _0x5f15x12=setInterval(function()
