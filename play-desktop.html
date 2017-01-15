@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{
-margin: 0px;
-padding: 0px;
-top: 0px;
-left: 0px;
-}
-</style>
+ <style>
+  body{
+   margin: 0px;
+   padding: 0px;
+   top: 0px;
+   left: 0px;
+  }
+ </style>
 </head>
 
 <body>
@@ -17,13 +17,15 @@ left: 0px;
 <script>
 var videoEscolhido;
 
+
+
 var idVideos = [
-"pc-e3HGGgKA", //01
-"pc-e3HGGgKA", //02
+"pc-e3HGGgKA","pc-e3HGGgKA","pc-e3HGGgKA", "pc-e3HGGgKA"
 ];
 
 
 var videoEscolhido = idVideos[Math.floor((Math.random() * idVideos.length))];
+	
 
 </script>
 
@@ -32,75 +34,71 @@ var videoEscolhido = idVideos[Math.floor((Math.random() * idVideos.length))];
 
 <script type="text/javascript" id="UP" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflyFv0K1/www-widgetapi.js" async=""></script>
 <script src="https://www.youtube.com/iframe_api"></script>
-<script>
+    <script>
 
-var tag = document.createElement('script');
+      var tag = document.createElement('script');
 
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player;
-function onYouTubeIframeAPIReady() {
-player = new YT.Player('player', {
-height: '480',
-width: '854',
-autoplay: 1,
-start: 15,
-videoId: videoEscolhido,
-events: {
-'onReady': onPlayerReady,
-'onStateChange': onPlayerStateChange
-}
-});
-}
-
-
-function onPlayerReady(event) {
-
- console.log("Aqui executa o Play em 10 segundos");
-        player.cueVideoById({videoId: videoEscolhido,startSeconds:"10"});
+  
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '480',
+          width: '854',
+          autoplay: 1,
+          start: 1,
+          videoId: videoEscolhido,
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
 
 
-//event.target.playVideo();
-}
+      function onPlayerReady(event) {
+        //event.target.playVideo();
+      }
 
 
-var done = false;
-function onPlayerStateChange(event) {
-if (event.data == YT.PlayerState.PLAYING && !done) {
-setTimeout(stopVideo, 200);
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 200);
 setTimeout(mute, 100);
-done = true;
-}
-}
-function stopVideo() {
-player.playVideo();
+          done = true;
+        }
+      }
+      function stopVideo() {
+                player.playVideo();
+                player.seekTo(7);
+                player.mute();
+            }
+function mute() { player.mute(); } 
+    </script>
 
-player.mute();
-}
-function mute() { player.mute(); }
-</script>
+<SCRIPT LANGUAGE="JavaScript">   
+<!-- Disable   
+function disableselect(e){   
+return false   
+}   
 
-<SCRIPT LANGUAGE="JavaScript">
-<!-- Disable
-function disableselect(e){
-return false
-}
+function reEnable(){   
+return true   
+}   
 
-function reEnable(){
-return true
-}
-
-//if IE4+
-document.onselectstart=new Function ("return false")
-document.oncontextmenu=new Function ("return false")
-//if NS6
-if (window.sidebar){
-document.onmousedown=disableselect
-document.onclick=reEnable
-}
-//-->
+//if IE4+   
+document.onselectstart=new Function ("return false")   
+document.oncontextmenu=new Function ("return false")   
+//if NS6   
+if (window.sidebar){   
+document.onmousedown=disableselect   
+document.onclick=reEnable   
+}   
+//-->   
 
 
 </script>
