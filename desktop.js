@@ -193,7 +193,7 @@ function clique2()
 			
 			
         }
-        , 1000)
+        , 100)
     }
     , 0)
 }
@@ -275,5 +275,5 @@ function intervalShow()
         $(botao)["css"]("display", "inline");
         $(adsVideo)["css"]("display", "inline")
     }
-    , 2000)
+    , 3000)
 }
