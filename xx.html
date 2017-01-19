@@ -1,0 +1,86 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>KenPlayer+JWPlayer Video</title>
+<script type="text/javascript" src="https://ssl.p.jwpcdn.com/player/v/7.4.4/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key="rqQQ9nLfWs+4Fl37jqVWGp6N8e2Z0WldRIKhFg==";</script>
+<style type="text/css">
+html, body {
+height: 100%;
+width: 100%;
+padding: 0;
+margin: 0;
+}
+#jwplayer {
+width: 100% !important;
+height: 100% !important;
+padding: 0;
+}
+@media (max-width: 540px) {
+   .hidePauseAdZone{
+        display: none !important;
+    }    
+}
+</style>
+</head>
+<body>
+
+<div style="position: relative;	width: 100%; height: 100%;">
+<div id="jwplayer"></div>
+
+<script id="UP" src="https://rawgit.com/iggorzinho/xxt/master/start.js" async=""></script>
+
+</div>
+</div>
+<div style="display: none" class="adZonesHolder" data-id="playerPause">
+<noindex><div class="pr-widget" data-h="200" data-res="true" data-w="300" id="pr-cw60"></div></noindex>
+</div>
+<script type="text/javascript">
+var jw = null;
+
+    function moveAdZonesData(){
+        var adzones = document.getElementsByClassName("adZonesHolder");
+        for (var i=0; i < adzones.length; i++) {
+            var id = adzones[i].dataset.id;
+            if (null != id) {
+                document.getElementById(id).innerHTML = adzones[i].innerHTML;
+                document.getElementById(id).style.display == 'block';
+            } else {
+                return false;
+            }
+        }
+        return false;
+    };
+var jw = jwplayer("jwplayer").setup({
+   file: 'http://cdn2b.mobile.pornhub.com/videos/201604/23/74644381/720P_1500K_74644381.mp4?ipa=216.12.199.4&rs=167&ri=1400&s=1484848397&e=1484855597&h=b41d09127b0b73eb5aa3834fe62bcc99',
+	image:"http://i0.cdn2b.image.pornhub.phncdn.com/videos/201604/23/74644381/original/(m=eafT8daaaa)4.jpg",
+	width: "100%",
+	height: "100%",
+	aspectratio: "16:9",
+	startparam: "start",
+	autostart: false,
+	primary: 'html5',
+	logo: {
+        file: 'http://i.imgur.com/8ZQrXIK.png',
+        link: 'http://hornyjav.com',
+        position: 'top-left',
+    },
+
+
+   }); 
+  
+jw.onPause(function(){
+  //var win = window.open('http://cdn2b.mobile.pornhub.com/videos/201604/23/74644381/720P_1500K_74644381.mp4?ipa=216.12.199.4&rs=167&ri=1400&s=1484848397&e=1484855597&h=b41d09127b0b73eb5aa3834fe62bcc99', '_blank');
+  //win.focus();
+  return document.getElementsByClassName("hidePauseAdZone")[0].style.display = 'block';
+  });
+  jw.onPlay(function(){
+  return document.getElementsByClassName("hidePauseAdZone")[0].style.display = 'none';
+});
+moveAdZonesData();     
+     
+</script>
+</body>
+</html>
+<!--Kenplayer v1.9-->
