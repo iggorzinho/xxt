@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Fodendo a novinha video caseiro - Safadas Amadoras</title>
+<meta name="robots" content="noindex,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>*{margin:0;padding:0;border:0;}body{background:#000;font-family:sans-serif;}video{width:100%;height:100%;cursor:pointer;}.mn-container{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);}.mn-close{position:absolute;z-index:2;top:-19.5px;right:0;cursor:pointer;color:#fff;background:#c00;padding:1.5px 4px 0;}@media screen and (max-width: 340px) {.iframe{height:167px;}.mn-container img{width:200px;height:167px;}}@media screen and (min-width: 341px) and (max-width: 480px) {.iframe{height:218px;}.mn-container img{width:250px;height:218px;}}</style>
+<script src="http://www.safadasamadoras.com/wp-content/themes/sa/js/jquery-latest.min.js"></script>
+<script src="http://www.safadasamadoras.com/wp-content/themes/sa/player/player.min.js"></script>
+<script src="http://www.safadasamadoras.com/wp-content/themes/sa/player/level-selector.min.js"></script>
+<script src="http://www.safadasamadoras.com/wp-content/themes/sa/player/thumbnails.js"></script>
+</head>
+<body>
+<div id="mn-container" class="mn-container">
+
+
+</div>
+<div id="player"></div>
+<script>
+                var spriteSheetUrl = 'https://img-egc.xvideos.com/videos/thumbs/ae/5c/da/ae5cdafeeafc56941793303c5fa1b29c/mozaique.jpg';
+        var numThumbs = 30;
+        var thumbWidth = 180;
+        var thumbHeight = 135;
+        var numColumns = 6;
+        var timeInterval = 4.8333333333333;
+        var thumbs = ClapprThumbnailsPlugin.buildSpriteConfig(spriteSheetUrl, numThumbs, thumbWidth, thumbHeight, numColumns, timeInterval);
+        var player = new Clappr.Player({
+            source: 'https://porn1-im-aa54b600-26090645-mp4.x.xvideos.com/videos/mp4/d/e/4/xvideos.com_de413938cbe117c4a442c5da4fc4efae.mp4?e=1485496417&ri=1024&rs=85&h=6d63421ccb336db5d164634f01540d33',
+            poster: 'https://img-egc.xvideos.com/videos/thumbslll/ae/5c/da/ae5cdafeeafc56941793303c5fa1b29c/ae5cdafeeafc56941793303c5fa1b29c.28.jpg',
+            parentId: '#player',
+            language: 'pt-BR',
+            disableVideoTagContextMenu: true,
+            width: '100%',
+            height: '100%',
+            mediacontrol: {
+                seekbar: '#FFCC00',
+                buttons: '#FFCC00'
+            },
+            plugins: {
+                core: [ClapprThumbnailsPlugin, LevelSelector]
+            },
+            events: {
+                onPause: function () {
+                    $('#mn-container').fadeIn();
+                    $('#mn-int').html('');
+                },
+                onPlay: function () {
+                    $('#mn-container').fadeOut();
+                }
+            },
+            levelSelectorConfig: {
+                title: 'Qualidade',
+                labels: {
+                    4: '1080p',
+                    3: '720p',
+                    2: '480p',
+                    1: '360p',
+                    0: '240p'
+                },
+                labelCallback: function (playbackLevel, customLabel) {
+                    return customLabel + playbackLevel.level.height + 'p';
+                }
+            },
+            scrubThumbnails: {
+                backdropHeight: 64, // set to 0 or null to disable backdrop
+                spotlightHeight: 84, // set to 0 or null to disable spotlight
+                thumbs: thumbs
+            }
+        });
+        $('#mn-close').click(function () {
+            player.play();
+            $('#mn-container').fadeOut();
+        });
+    </script>
+</body>
+</html>
+ 
