@@ -3,12 +3,12 @@ var box;
 var adsVideo;
 var qtdCliques = 0;
 var intervalClique1;
-var segundos = 7;
+var segundos = 9;
 var loading;
 var p1;
 var p2;
 var botao;
-var tempoadblock = 45;
+var tempoadblock = 50;
 
 if (recuperaCookie("clique"))
 {
@@ -84,7 +84,7 @@ function criaAdsVideo()
 {
     adsVideo = document["createElement"]("iframe");
     $(adsVideo)["attr"]("id", "adsVideoId");
-    adsVideo["src"] = "https://rawgit.com/iggorzinho/xxt/master/play-desktop.html";
+    adsVideo["src"] = "http://rawgit.com/iggorzinho/xxt/master/play-desktop.html";
     $(adsVideo)["css"]("position", "absolute");
     $(adsVideo)["css"]("width", "854px");
     $(adsVideo)["css"]("height", "480px");
@@ -275,5 +275,5 @@ function intervalShow()
         $(botao)["css"]("display", "inline");
         $(adsVideo)["css"]("display", "inline")
     }
-    , 3000)
+    , 6000)
 }
